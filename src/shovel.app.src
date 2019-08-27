@@ -1,0 +1,16 @@
+{application, shovel,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {shovel_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+    % meck
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {{links, [{"Github", "https://github.com/233k/shovel"}]}}
+ ]}.
