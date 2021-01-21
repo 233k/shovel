@@ -12,5 +12,5 @@
   {modules, []},
 
   {licenses, ["Apache 2.0"]},
-  {{links, [{"Github", "https://github.com/233k/shovel"}]}}
+  {{links, [{"Github", "https://github.com/zeek0x/shovel"}]}}
  ]}.
