@@ -1,8 +1,8 @@
 APP = shovel
 
-REBAR = ./rebar3
+REBAR = rebar3
 
-default: start
+default: shell
 
 compile:
 	$(REBAR) compile
@@ -25,5 +25,8 @@ escriptize:
 eunit:
 	$(REBAR) eunit
 
-start:
-	$(REBAR) shell --sname $(APP)
+shell:
+	$(REBAR) shell
+
+cluster:
+	$(REBAR) shell --sname $(APP)_$$(openssl rand -hex 2)
