@@ -14,10 +14,10 @@
 ]).
 
 start_link() ->
-    gen_server:start_link(?MODULE, ok, []).
+    gen_server:start_link(?MODULE, ok, #{}).
 
-init(_Args) ->
-    {ok, #{}}.
+init(State) ->
+    {ok, State}.
 
 handle_call(_Request, _From, State) ->
     {reply, ok, State}.

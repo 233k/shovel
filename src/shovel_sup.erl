@@ -29,7 +29,7 @@ start_link() ->
 %%     modules => modules()            % optional
 %% }
 
-init([]) ->
+init(_) ->
     SupFlags = #{
         strategy => one_for_all,
         intensity => 0,
