@@ -8,8 +8,7 @@
 
 -define(SRV_SPEC, #{
     id => shovel_srv,
-    start => {shovel_srv, start_link, []},
-    modules => [shovel_srv]
+    start => {shovel_srv, start_link, []}
 }).
 
 start_link() ->
